@@ -1,29 +1,39 @@
+@media only screen and (min-width: 992px) { 
+    
 .item-a{
     grid-area:header;
     background-color: rgba(33,150,243,255);
     color: white;
 }
-
+.item-a h1{
+    margin-left: 10px;
+}
 .item-b{
     grid-area:list;
     display: flex;
     flex-flow: row wrap;
-    justify-content:space-around;
-    background-color: rgba(241,245,247,255);
+    align-content:center;
+    background-color: rgba(33,150,243,255);
 }
-
+.all-ads {
+    width: 50%;
+    background-color: rgba(241,245,247,255);
+    align-content: center;
+}
+h2{
+    font-weight: normal;
+}
 
 .item-c{
     grid-area:content;
     display: flex;
     flex-flow: column wrap;
-    background-color: white;
-    
+ 
 }
-.item-d{
-    grid-area:rights;
-    background-color: rgba(33,150,243,255);
-    color: white;
+.item-c-content{
+    margin-top: auto;
+    margin-bottom: 20px;
+    background-color: white;
 }
 .content-ad{
     display: flex;
@@ -37,6 +47,24 @@
     flex-flow: row  wrap;
     justify-content: space-around;
 }
+.time-price p{
+    margin-right: 20px;
+}
+.price{
+    font-weight: bold;
+}
+h4{
+    font-weight:normal
+}
+.item-d{
+    grid-area:rights;
+    background-color: rgba(33,150,243,255);
+    color: white;
+}
+.item-d h4{
+    margin-left: 10px;
+}
+
 .container{
     display: grid;
     grid-template-columns: 100%;
@@ -51,3 +79,4 @@
    
 }
 
+}
