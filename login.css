@@ -40,10 +40,9 @@ h2,h3{
     font-weight: normal;
 }
 .container{
-    
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: auto;
+    grid-template-rows: 80px  500px  auto  80px;
     flex-flow: column ;
     grid-template-areas: 
     "header"
@@ -63,12 +62,9 @@ img{
     flex-flow: column ;
    height: 20rem;
    align-items: center;
-  
-   
 }
 .div-form-login{
    margin-top: 20px;
-   
 }
 #username, #password{
     background-color: rgba(241,245,247,255);
@@ -78,17 +74,18 @@ img{
     
 }
 .div-form-submit{
-    
     margin-top: auto;
     margin-bottom: 20px;
-
 }
 .form-submit{
     border:none;
     background-color: rgba(33,150,243,255);
     height:50px;
     width: 280px;
-
 }
 
+html, body,.container { height : 100%; }
+body{
+    margin: 0;
+}
 }
