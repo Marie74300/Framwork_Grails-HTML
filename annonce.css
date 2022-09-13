@@ -60,7 +60,6 @@
     .content-ad{
         display: flex;
         flex-flow: row  ;
-        
     }
     img{
         height: 100%;
