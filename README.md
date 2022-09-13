@@ -6,4 +6,4 @@
 
 <p>Les pages utilises egalements les principes du responsives pour s'adapter sur les ecrans qu'ils soient desktop ou de telephone et tablette.</p>
 
-<p>Réalisé par Marie-Céleste SANCHEZ</p>
+<h4>Réalisé par Marie-Céleste SANCHEZ</h4>
