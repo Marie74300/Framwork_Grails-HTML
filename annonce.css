@@ -55,14 +55,16 @@
     .item-c-content{
         margin: 20px;
         background-color: white;
-        
+        border-radius: 5px;
     }
     .content-ad{
         display: flex;
         flex-flow: row  ;
+        
     }
     img{
         height: 100%;
+        border-radius: 5px;
     }
     .desc-ad{
         margin-left: 20px;
