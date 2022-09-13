@@ -1,4 +1,6 @@
+
 @media only screen and (min-width: 320px) { 
+    /*Desktop screen*/
     /*CSS Global */
     html, body,.container{ 
         height : 100%; 
@@ -109,4 +111,50 @@
    
 
 
+}
+@media only screen and (min-width: 320px) and (max-width: 980px) { 
+    /* mobile screen*/
+    /*CSS du container */
+    .container{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px  100px  auto  100px;
+        flex-flow: column ;
+        grid-template-areas: 
+        "header"
+        "list"
+        "content"
+        "rights";
+    }
+    /*CSS d item a = titre */
+    .item-a h1{
+        font-size:50px;
+    }
+    /*CSS d item b= choix list  */
+    .item-b h2{
+        font-size:40px;
+    }
+    /*CSS d item c=annonce  */
+    .item-c-content{
+        margin: 20px;
+        background-color: white;
+        border-radius: 5px;
+        height: 300px;
+        font-size:30px;
+    }
+
+    img{
+        height: 300px;
+        border-radius: 5px;
+    }
+    .desc-ad{
+        margin-left: 200px;
+    }
+    
+    /*CSS d item d = droits*/
+    .item-d h4{
+        font-size:30px;
+        font-weight: normal;
+    }
+    
 }
