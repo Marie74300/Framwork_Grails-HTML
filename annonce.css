@@ -1,108 +1,111 @@
 @media only screen and (min-width: 320px) { 
+    /*CSS Global */
+    html, body,.container{ 
+        height : 100%; 
+    }
+    body{
+        margin: 0;
+    }
+    /*CSS de l'item-a= titre et ses elements */
+    .item-a{
+        grid-area:header;
+        background-color: rgba(33,150,243,255);
+        color: white;
+    }
+    .item-a h1{
+        margin-left: 10px;
+    }
+    /*CSS de l'item-b= choix de liste et ses elements */
+    .item-b {
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: auto;
+        grid-template-areas: "allads myads";
+        background-color: rgba(33,150,243,255);
+    }
+    .item-b :hover {
+        
+        background-color: rgb(98, 130, 174);
+    }
+    .all-ads {
+        grid-area: allads;
+        background-color: rgb(94, 181, 224);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .my-ads{
+        grid-area: myads;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
-.item-a{
-    grid-area:header;
-    background-color: rgba(33,150,243,255);
-    color: white;
-}
-.item-a h1{
-    margin-left: 10px;
-}
-
-
-.all-ads {
-    grid-area: allads;
-    background-color: rgb(94, 181, 224);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    h2{
+        font-weight: normal;
+    }
+    /*CSS de l'item-c= annonces et ses elements */
+    .item-c{
+        grid-area:content;
+        display: flex;
+        flex-flow: column ;
     
-}
-.my-ads{
-    grid-area: myads;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    }
+    .item-c-content{
+        margin: 20px;
+        background-color: white;
+        
+    }
+    .content-ad{
+        display: flex;
+        flex-flow: row  ;
+    }
+    img{
+        height: 100%;
+    }
+    .desc-ad{
+        margin-left: 20px;
+    }
+    .time-price{
+        display: flex;
+        flex-flow: row  ;
+        justify-content: space-around;
+    }
+    .time-price p{
+        margin-right: 20px;
+    }
+    .price{
+        font-weight: bold;
+    }
+    h4{
+        font-weight:normal
+    }
 
+    /*CSS de l'item-d=droits et ses elements */
+    .item-d{
+        grid-area:rights;
+        background-color: rgba(33,150,243,255);
+        color: white;
+        
+    }
+    .item-d h4{
+        margin-left: 10px;
+    }
+    /*CSS du container */
+    .container{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 80px  80px  auto  80px;
+        flex-flow: column ;
+        grid-template-areas: 
+        "header"
+        "list"
+        "content"
+        "rights"; background-color: rgba(207,216,220,255);
+    }
 
-.item-b {
-    display: grid;
-    grid-template-rows: 100%;
-    grid-template-columns: auto;
-    grid-template-areas: "allads myads";
-    background-color: rgba(33,150,243,255);
-}
-.item-b :hover {
-    
-    background-color: rgb(98, 130, 174);
-}
-  
-h2{
-    font-weight: normal;
-}
-
-.item-c{
-    grid-area:content;
-    display: flex;
-    flex-flow: column ;
- 
-}
-.item-c-content{
-    margin: 20px;
-    background-color: white;
-    
-}
-.content-ad{
-    display: flex;
-    flex-flow: row  ;
-}
-.desc-ad{
-    margin-left: 20px;
-}
-.time-price{
-    display: flex;
-    flex-flow: row  ;
-    justify-content: space-around;
-}
-.time-price p{
-    margin-right: 20px;
-}
-.price{
-    font-weight: bold;
-}
-h4{
-    font-weight:normal
-}
-.item-d{
-    grid-area:rights;
-    background-color: rgba(33,150,243,255);
-    color: white;
-    
-}
-.item-d h4{
-    margin-left: 10px;
-}
-img{
-    height: 100%;
-}
-.container{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 80px  80px  auto  80px;
-    flex-flow: column ;
-    grid-template-areas: 
-    "header"
-    "list"
-    "content"
-    "rights";
-    background-color: rgb(195, 191, 191);
-}
-
-html, body,.container{ height : 100%; }
-body{
-    margin: 0;
-}
+   
 
 
 }
