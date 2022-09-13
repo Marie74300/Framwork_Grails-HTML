@@ -1,4 +1,4 @@
-@media only screen and (min-width: 992px) { 
+@media only screen and (min-width: 320px) { 
     
 .item-a{
     grid-area:header;
@@ -33,7 +33,10 @@
     grid-template-areas: "allads myads";
     background-color: rgba(33,150,243,255);
 }
-  
+.item-b :hover {
+    
+    background-color: rgb(98, 130, 174);
+}
   
 h2{
     font-weight: normal;
@@ -46,8 +49,9 @@ h2{
  
 }
 .item-c-content{
-    margin-top: 20px;
+    margin: 20px;
     background-color: white;
+    
 }
 .content-ad{
     display: flex;
@@ -74,11 +78,14 @@ h4{
     grid-area:rights;
     background-color: rgba(33,150,243,255);
     color: white;
+    
 }
 .item-d h4{
     margin-left: 10px;
 }
-
+img{
+    height: 100%;
+}
 .container{
     display: grid;
     grid-template-columns: 100%;
